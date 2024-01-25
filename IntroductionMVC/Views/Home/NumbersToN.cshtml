@@ -1,0 +1,17 @@
+﻿
+@{
+    ViewBag.Title = "Numbers 1 ..." + ViewBag.Count;
+}
+
+<h2>@ViewBag.Title</h2>
+<ul>
+    @for (int i = 1; i <= ViewBag.Count; i++)
+    {
+        <li>@i</li>
+    }
+</ul>
+@using (Html.BeginForm("NumbersToN", "Home", FormMethod.Get))
+{
+    <input type="number" name="count" min="1" value="@ViewBag.Count" />
+    <input type="submit" value="Show Numbers" class="btn btn-primary mt-2" />
+}
