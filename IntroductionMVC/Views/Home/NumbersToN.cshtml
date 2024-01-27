@@ -13,5 +13,6 @@
 @using (Html.BeginForm("NumbersToN", "Home", FormMethod.Get))
 {
     <input type="number" name="count" min="1" value="@ViewBag.Count" />
+    <br/>
     <input type="submit" value="Show Numbers" class="btn btn-primary mt-2" />
 }
