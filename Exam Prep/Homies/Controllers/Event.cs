@@ -202,7 +202,7 @@ namespace Homies.Controllers
         public async Task<IActionResult> Details(int id)
         {
             var model = await data.Events
-                .Include(e => e.Organiser) // Include Organiser navigation property
+                .Include(e => e.Organiser)
                 .FirstOrDefaultAsync(e => e.Id == id);
 
             if (model == null)
