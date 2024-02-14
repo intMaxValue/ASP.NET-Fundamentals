@@ -1,12 +1,14 @@
 ﻿using Microsoft.AspNetCore.Identity;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.ComponentModel.DataAnnotations;
+using Microsoft.EntityFrameworkCore;
 
 namespace Homies.Data.Models
 {
     public class Event
     {
         [Key]
+        [Comment("Event Identifier")]
         public int Id { get; set; }
 
         [Required]
