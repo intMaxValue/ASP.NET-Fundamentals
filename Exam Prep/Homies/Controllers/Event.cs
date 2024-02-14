@@ -1,10 +1,13 @@
 ﻿using Homies.Data;
 using Homies.Data.Models;
 using Homies.Models;
+
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+
 using System.Security.Claims;
+
 using static Homies.Data.DataConstants;
 
 namespace Homies.Controllers
